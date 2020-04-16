@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainbackground_color"
+    android:background="#8B9FB5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#024188"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="빈소안내"
+            android:letterSpacing="0.2"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/text_font"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/time_data"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="30dp"
+            />
+
+
+        <TextView
+            android:id="@+id/time_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/text_font"
+            android:textSize="20dp"
+            android:text="2019년 09월 23일 오전 10:32"
+            android:textColor="#fff"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/view_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    <include
+        android:id="@+id/thumbnail_view_h_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_h"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_h_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_h"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_h_4_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_h"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_h_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_h"
+        android:visibility="invisible"
+        />
+
+
+        <ImageView
+            android:id="@+id/top_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:src="@drawable/view_on_off"
+            android:scaleType="centerCrop"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

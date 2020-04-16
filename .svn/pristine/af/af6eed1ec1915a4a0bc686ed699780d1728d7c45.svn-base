@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nexgrid_fsp.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+    <!-- 인터넷 퍼미션 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 네트워크 상태 접근 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 외장하드 퍼미션 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 미디어 플레이어 퍼미션 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 부팅 인텐트 -->
+    <uses-permission android:name="android.permission.RECEnexgIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 앱이 죽으면 호출하는 메소드 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- USB 가져 올때 오는 퍼미션 -->
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature android:name="android.ACTION_USB_DEVICE_ATTACHED " />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.nexgrid_fsp.myapplication.special.Thumbnail_View_BlueFlag" />
+        <activity android:name="com.nexgrid_fsp.myapplication.special.List_Hyo_Jung" />
+        <activity android:name="com.nexgrid_fsp.myapplication.entrance.Entance_View_H" />
+        <activity android:name="com.nexgrid_fsp.myapplication.entrance.Entance_View_V" />
+        <activity android:name="com.nexgrid_fsp.myapplication.profile.ProfileViewPage" />
+        <activity android:name="com.nexgrid_fsp.myapplication.thumbil.View.Thumbnail_View_V" />
+        <activity android:name="com.nexgrid_fsp.myapplication.thumbil.View.Thumbnail_View_H" />
+        <activity
+            android:name="com.nexgrid_fsp.myapplication.list.ViewListPage"
+            android:theme="@style/FullScreenTheme" />
+        <activity android:name="com.nexgrid_fsp.myapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- usb 연결 시 피료함 -->
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+        <receiver
+            android:name="com.nexgrid_fsp.myapplication.MyAutoRunApp"
+            android:enabled="true"
+            android:exported="false"
+            android:label="STARTReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

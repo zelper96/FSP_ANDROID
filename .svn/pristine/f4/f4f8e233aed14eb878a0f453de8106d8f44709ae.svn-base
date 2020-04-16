@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nexgrid_fsp.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml
+10    <!-- 인터넷 퍼미션 -->
+11    <uses-permission android:name="android.permission.INTERNET" /> <!-- 네트워크 상태 접근 -->
+11-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 외장하드 퍼미션 -->
+13-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:7:5-75
+13-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:7:22-72
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 미디어 플레이어 퍼미션 -->
+14-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 부팅 인텐트 -->
+15-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:9:5-80
+15-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:9:22-77
+16    <uses-permission android:name="android.permission.RECEnexgIVE_BOOT_COMPLETED" />
+16-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:10:5-85
+16-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:10:22-82
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 앱이 죽으면 호출하는 메소드 -->
+17-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:11:5-81
+17-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- USB 가져 올때 오는 퍼미션 -->
+18-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:12:5-68
+18-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:12:22-65
+19
+20    <uses-feature
+20-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:14:5-16:36
+21        android:name="android.hardware.usb.host"
+21-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:15:9-49
+22        android:required="false" />
+22-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:16:9-33
+23    <uses-feature android:name="android.ACTION_USB_DEVICE_ATTACHED " />
+23-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:17:5-72
+23-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:17:19-69
+24
+25    <application
+25-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:19:5-61:19
+26        android:allowBackup="true"
+26-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:20:9-35
+27        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+27-->[com.android.support:support-compat:28.0.0] C:\Users\nexgrid\.gradle\caches\transforms-2\files-2.1\ccf94a4f227dfa4f17156620e28a8b98\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+28        android:icon="@mipmap/ic_launcher"
+28-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:21:9-43
+29        android:label="@string/app_name"
+29-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:22:9-41
+30        android:networkSecurityConfig="@xml/network_security_config"
+30-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:23:9-69
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:24:9-54
+32        android:supportsRtl="true"
+32-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:25:9-35
+33        android:theme="@style/AppTheme" >
+33-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:26:9-40
+34        <activity android:name="com.nexgrid_fsp.myapplication.special.Thumbnail_View_BlueFlag" />
+34-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:27:9-78
+34-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:27:19-66
+35        <activity android:name="com.nexgrid_fsp.myapplication.special.List_Hyo_Jung" />
+35-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:28:9-59
+35-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:28:19-56
+36        <activity android:name="com.nexgrid_fsp.myapplication.entrance.Entance_View_H" />
+36-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:29:9-61
+36-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:29:19-58
+37        <activity android:name="com.nexgrid_fsp.myapplication.entrance.Entance_View_V" />
+37-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:30:9-61
+37-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:30:19-58
+38        <activity android:name="com.nexgrid_fsp.myapplication.profile.ProfileViewPage" />
+38-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:31:9-61
+38-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:31:19-58
+39        <activity android:name="com.nexgrid_fsp.myapplication.thumbil.View.Thumbnail_View_V" />
+39-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:32:9-67
+39-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:32:19-64
+40        <activity android:name="com.nexgrid_fsp.myapplication.thumbil.View.Thumbnail_View_H" />
+40-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:33:9-67
+40-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:33:19-64
+41        <activity
+41-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:34:9-36:54
+42            android:name="com.nexgrid_fsp.myapplication.list.ViewListPage"
+42-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:35:13-46
+43            android:theme="@style/FullScreenTheme" />
+43-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:36:13-51
+44        <activity android:name="com.nexgrid_fsp.myapplication.MainActivity" >
+44-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:37:9-50:20
+44-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:37:19-47
+45            <intent-filter>
+45-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:38:13-45:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:39:17-69
+46-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:39:25-66
+47                <action android:name="android.intent.action.BOOT_COMPLETED" />
+47-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:40:17-79
+47-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:40:25-76
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:42:17-77
+49-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:42:27-74
+50                <!-- usb 연결 시 피료함 -->
+51                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+51-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:44:17-90
+51-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:44:25-87
+52            </intent-filter>
+53
+54            <meta-data
+54-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:47:13-49:57
+55                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+55-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:48:17-79
+56                android:resource="@xml/device_filter" />
+56-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:49:17-54
+57        </activity>
+58
+59        <receiver
+59-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:52:9-60:20
+60            android:name="com.nexgrid_fsp.myapplication.MyAutoRunApp"
+60-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:53:13-41
+61            android:enabled="true"
+61-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:54:13-35
+62            android:exported="false"
+62-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:55:13-37
+63            android:label="STARTReceiver" >
+63-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:56:13-42
+64            <intent-filter>
+64-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:57:13-59:29
+65                <action android:name="android.intent.action.BOOT_COMPLETED" />
+65-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:40:17-79
+65-->D:\FSP_ANDROID\FSP_ARD\app\src\main\AndroidManifest.xml:40:25-76
+66            </intent-filter>
+67        </receiver>
+68    </application>
+69
+70</manifest>

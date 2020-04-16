@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainbackground_color"
+    >
+
+
+    <include
+        android:id="@+id/thumbnail_view_v_1_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_single_v"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_v_1_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_single_v"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_v_4_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_v"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/thumbnail_view_v_4_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_thumbnail_view_multi_v"
+        android:visibility="invisible"
+        />
+
+
+    <ImageView
+        android:id="@+id/top_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:src="@drawable/view_on_off"
+        android:scaleType="fitXY"
+        />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

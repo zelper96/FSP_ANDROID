@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:id="@+id/lineC_background_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <com.nexgrid_fsp.myapplication.thumbil.Style.Thumbnail_sub_Multi_V
+            android:id="@+id/view_page_sub_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            />
+
+        <com.nexgrid_fsp.myapplication.thumbil.Style.Thumbnail_sub_Multi_V
+            android:id="@+id/view_page_sub_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.nexgrid_fsp.myapplication.thumbil.Style.Thumbnail_sub_Multi_V
+                android:id="@+id/view_page_sub_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <ImageView
+                android:id="@+id/spawn_img_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:layout_margin="4dp"
+                android:src="@drawable/view_on_off"
+                android:visibility="invisible"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.nexgrid_fsp.myapplication.thumbil.Style.Thumbnail_sub_Multi_V
+            android:id="@+id/view_page_sub_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+            <ImageView
+                android:id="@+id/spawn_img_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/view_on_off"
+                android:visibility="invisible"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

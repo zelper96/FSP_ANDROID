@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:orientation="vertical">
+
+
+    <!--
+
+    시리얼 넘버 생선 페이지
+    앱이 맨처음 실행 됬을경우
+
+    -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/check_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/cereal_num"
+            app:layout_constraintLeft_toLeftOf="@id/cereal_num"
+            app:layout_constraintRight_toRightOf="@id/cereal_num"
+            android:layout_marginBottom="10dp"
+            android:text="시리얼 넘버 인증코드"
+            />
+
+        <TextView
+            android:id="@+id/cereal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:letterSpacing="0.2"
+            android:text="시리얼넘버"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cereal_num"
+            app:layout_constraintLeft_toLeftOf="@id/cereal_num"
+            app:layout_constraintRight_toRightOf="@id/cereal_num"
+            android:layout_marginTop="10dp"
+            android:text="승인 대기중"/>
+
+
+        <TextView
+            android:id="@+id/server_run_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/value_text"
+            app:layout_constraintBottom_toBottomOf="@+id/value_text"
+            android:layout_marginLeft="5dp"
+            android:text="."
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>
